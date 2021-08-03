@@ -1,13 +1,4 @@
 module.exports = function toReadable (number) {
- /* 
-let numbers= [
-    ["one", "eleven"],
-    ["two", "twelve"],
-    ["three", "thirteen"],
-    ["four","fourteen"],
-    
-  ];
-  */
 
 let numbers=['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'];
 numbers[30]='thirty';
@@ -43,8 +34,6 @@ answer=numbers[digits];
 //console.log("units", units);
 //console.log("dozens", dozens);
 
-
-
 if(number>99){
   hundreds=numbers[Math.floor(number/100)];
   if(digits==0){
@@ -53,7 +42,6 @@ if(number>99){
   answer=hundreds+' hundred '+answer;
   }
 }
-
 
 return answer;
 }
